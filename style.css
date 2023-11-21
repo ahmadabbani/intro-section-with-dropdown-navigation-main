@@ -1,0 +1,481 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+
+header{
+  display: flex;
+  padding: 25px 30px;
+  background-color: hsl(0, 0%, 98%);
+  width: 100%;
+}
+
+.header-section-one{
+  margin-right: 40px;
+}
+.header-section-two{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.login-register-section div{
+  display: flex;
+  gap: 35px;
+}
+
+#login{
+  display: inline-block;
+  color:  hsl(0, 0%, 41%);
+  font-family:'Epilogue', sans-serif;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+#login:hover{
+  color: hsl(0, 0%, 8%);
+  font-weight: 700;
+}
+
+#register{
+  display: inline-block;
+  color:  hsl(0, 0%, 41%);
+  font-family:'Epilogue', sans-serif;
+  font-weight: 500;
+  background-color: transparent;
+  border: 2px solid  hsl(0, 0%, 41%);
+  border-radius: 10px;
+  padding: 7px 17px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+#register:hover{
+  color: hsl(0, 0%, 8%);
+  border: 2px solid   hsl(0, 0%, 8%);
+  font-weight: 700;
+}
+
+#menu-icon{
+ z-index: 1000;
+ position: absolute;
+ top: 15px;
+ right: 15px;
+ display: none;
+ cursor: pointer;
+}
+
+#close-menu-icon{
+  display: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;  
+   min-height: 30px;
+   cursor: pointer;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width:110px;
+  border-radius: 10px;
+  padding: 5px 20px;
+  top:28px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+/* Style for the dropdown links */
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  margin: 15px 0;
+  display: flex;
+  gap: 15px;
+ 
+}
+
+/* Show the dropdown content when hovering over the dropdown container */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style for the horizontal list */
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 35px;
+}
+
+/* Add some styling for the main navigation links */
+ul a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 13px;
+}
+
+ul a:hover{
+  color: hsl(0, 0%, 8%);
+  font-weight: 700;
+}
+
+.dropdown:hover .features{
+  color: hsl(0, 0%, 8%);
+  font-weight: 700;
+}
+
+.dropdown:hover .company{
+  color: hsl(0, 0%, 8%);
+  font-weight: 700;
+}
+
+.dropdown .arrow-up{
+  display: none; /* Ensure the arrow-up is initially hidden */
+}
+
+.dropdown:hover .arrow-down{
+  display: none; 
+}
+
+.dropdown:hover .arrow-up{
+  display: inline-block;
+  filter: hue-rotate(0deg) saturate(0%) brightness(8%);
+}
+
+main {
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  min-height: 100%;
+ 
+  padding: 0px 50px;
+}
+
+.left-content {
+  flex: 1 0 calc(55% - 0.5rem); /* Each item takes half the width with a gap between them */
+  max-width: calc(55% - 0.5rem); /* Set max-width to prevent the items from exceeding half the width */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 70px;
+  padding-top: 95px;
+}
+
+.img-hero{
+  flex: 1 0 calc(45% - 0.5rem); /* Each item takes half the width with a gap between them */
+  max-width: calc(45% - 0.5rem); /* Set max-width to prevent the items from exceeding half the width */
+  height: 650px;
+  background-image: url("images/image-hero-desktop.png");
+  background-size: contain; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+
+.text-content{
+  margin-bottom: 4rem;
+}
+
+.text-content h1{
+font-size:3.5rem;
+font-weight: 700;
+margin-bottom: 2.8rem;
+display: flex;
+flex-direction: column;
+}
+
+.text-content p {
+ font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 2.8rem;
+  width: 70%;
+  color:  hsl(0, 0%, 41%);
+}
+
+.text-content h1 span{
+  line-height: 1;
+}
+
+.text-content button{
+  display: inline-block;
+  color:  hsl(0, 0%, 98%);
+  font-family:'Epilogue', sans-serif;
+  font-weight: 700;
+  background-color: hsl(0, 0%, 8%);
+  border-radius: 10px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border: 1px solid hsl(0, 0%, 8%);
+  font-size: 0.8rem;
+}
+
+.text-content button:hover{
+  color:  hsl(0, 0%, 8%);
+  background-color:transparent;
+  border: 1px solid hsl(0, 0%, 8%);
+  font-weight: 700;
+}
+
+.clients{
+  display: flex;
+  gap:35px;
+  align-items: center;
+  width: fit-content;
+}
+
+/* attribution*/
+.attribution{ 
+    font-size: 13px; text-align: center;
+    padding-top: 20px;
+    margin: auto;
+ }
+ 
+.attribution a {
+     color: hsl(228, 45%, 44%);
+     }
+
+/*Media queries*/   
+@media (max-width: 430px){
+  
+   .text-content p{
+    width: 100% !important;
+   }
+  
+   .clients img{
+    width: 70px !important;
+  }
+  }
+
+@media (max-width: 576px){
+  header{
+    padding:15px 15px;
+  }
+  
+  #menu-icon{
+    display: block;
+  }
+  
+  .header-section-two{
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: start;
+    padding: 15px 0;
+    display: none;
+    z-index: 1000;
+  }
+  
+  .header-section-two nav ul{
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  
+  .login-register-section div{
+   flex-direction: column;
+   align-items: center;
+   gap: 15px; 
+  }
+  #login, #register{
+    font-size: 15px !important;
+  }
+  #register{
+    width: 80%;
+  }
+  li {
+   width: fit-content;
+   margin-bottom: 12px;
+  
+  }
+  
+  ul a{
+   font-size: 15px !important; 
+  }
+  .dropdown-content{
+    padding: 0px;
+    padding-left: 15px;
+    box-shadow:none;
+    position: relative;
+    top:0px;
+    transform: translateX(-0%);
+    left: 0%;
+  }
+  main{
+    padding: 0px 0px;
+  }
+
+  .left-content {
+    padding: 0;
+  }
+
+}
+  /* Display the menu when returning to a large screen after
+  closing it (by clicking on the close icon that hides the menu) on a small screen */
+  @media (min-width: 577px){
+  .header-section-two{
+    display: flex !important;
+  }
+  }
+
+@media (max-width: 767px) {
+  /* On small devices, make each item take the full width */
+  .left-content, .img-hero {
+    flex: 1 0 100%; /* Each item takes the full width */
+    max-width: 100%; /* Set max-width to ensure the items don't exceed the full width */
+  }
+  /* Swap the order of .left-content and .img-hero */
+  .left-content {
+    order: 2;
+    padding: 0;
+    align-items: center;
+  }
+
+  .text-content{
+    padding: 0;
+    border: 1px solid white;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .text-content h1{
+   font-size: 2.5rem;
+   display: inline-block;
+   flex-direction: row !important;
+   justify-content:center;
+   gap: 0.5rem !important;
+   margin-bottom:2rem ;
+  
+    }
+
+  .text-content h1 span{
+      display:inline!important;
+      gap: 10px !important;
+    }
+   
+  .text-content p {
+     width: 80% !important;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom:2rem ;
+  }
+
+  .img-hero {
+    order: 1;
+  }
+  .attribution {
+    order: 3;
+  }
+ 
+  .img-hero{
+   background-image: url("images/image-hero-mobile.png");
+   height: 400px;
+  }
+  .clients{
+    width: 100% !important;
+    justify-content: space-between;
+  }
+}
+
+ @media (max-width: 800px){
+  #login, #register, ul a {
+      font-size: 10px;
+  }
+  li {
+      margin-right: 15px;
+  }
+  .header-section-one{
+    margin-right: 15px;
+  }
+
+  #register{
+      padding: 5px 10px;
+      }
+  #logo{
+      width:65px;
+      }
+  ul a{
+      font-size: 10px;
+  }
+  .dropdown-content{
+      min-width:90px;
+      max-width: 120px;
+  }
+  .dropdown-content a img{
+      width:12px;
+  }
+  .clients{
+    gap: 20px;
+  }
+  
+}
+
+@media (min-width: 1020px){
+.img-hero{
+  height: 620px;
+}
+.text-content h1{
+font-size: 4.2rem;
+margin-bottom: 3.5rem;
+}
+.text-content p{
+font-size: 1.2rem;
+width: 80%;
+margin-bottom: 3.5rem;
+}
+.text-content{
+margin-bottom: 6rem;
+}
+.text-content button{
+font-size: 1.1rem;
+}
+.clients{
+width: 100%;
+gap: 35px;
+}
+
+}
+
+@media (min-width: 855px) and (max-width: 1019px){
+  .img-hero{
+    flex: 1 0 calc(40% - 0.5rem); /* Each item takes half the width with a gap between them */
+    max-width: calc(40% - 0.5rem); /* Set max-width to prevent the items from exceeding half the width */
+}
+.left-content {
+  flex: 1 0 calc(60% - 0.5rem); /* Each item takes half the width with a gap between them */
+  max-width: calc(60% - 0.5rem); /* Set max-width to prevent the items from exceeding half the width */
+}
+.clients{
+  gap: 15px;
+  }
+  .clients img{
+    width: 80px;
+  }
+}

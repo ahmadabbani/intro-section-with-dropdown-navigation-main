@@ -14,8 +14,7 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 
 ### Links
 
-- Solution URL: https://ahmadabbani.github.io/Intro section with dropdown navigation challenge on Frontend Mentor/
-
+- Solution URL: https://ahmadabbani.github.io/intro-section-with-dropdown-navigation-main/
 ### Built with
 
 - Semantic HTML5 markup
